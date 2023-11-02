@@ -12,7 +12,7 @@ const displayMeals = meals => {
     meals.forEach(meal => {
         const foodDiv = document.createElement('div');
         foodDiv.innerHTML = `
-            <div class="card mb-3 mx-auto" style="max-width: 540px;">
+            <div class="card mb-3 ms-4 me-4" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="${meal.strMealThumb}" class="img-fluid rounded-start" alt="...">
@@ -20,9 +20,9 @@ const displayMeals = meals => {
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">${meal.strMeal}</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
+                            <p class="card-text text-secondary my-4">This is a wider card with supporting text below as a natural
                                 lead-in to additional content. This content is a little bit longer.</p>
-                            <button onclick="modalButtonFunction('${meal.idMeal}')" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#displayFoodDetails">
+                            <button onclick="modalButtonFunction('${meal.idMeal}')" type="button" class="btn btn-warning btn-lg fw-bold fs-6 px-4 py-2" data-bs-toggle="modal" data-bs-target="#displayFoodDetails">
                             View Details
                             </button>
                         </div>

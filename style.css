@@ -10,7 +10,7 @@ body{
 
 .hero-section {
     height: 80vh;
-    background-image: url('images/banner_1.png');
+    background-image: url('images/banner_final.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,3 +54,9 @@ footer{
     font-size: 3rem;
     font-weight: 700;
 }
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
