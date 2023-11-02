@@ -1,0 +1,13 @@
+.hero-section {
+    height: 70vh;
+    background-image: url('images/banner_1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(60%); */
+    /* opacity: .5; */
+}
+
+footer{
+    background-color: #fffcf3;
+}
