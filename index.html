@@ -5,28 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magnificent Meal</title>
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/2d468b80bf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <!-- navigation -->
         <nav class="container d-flex justify-content-between align-items-center p-4">
-            <h3>Magnificent Meal</h3>
-            <button type="button" class="btn btn-warning btn-lg fw-bold">Sign Up</button>
+            <h4 class="fw-bold">Magnificent Meal</h4>
+            <button type="button" class="btn btn-warning btn-lg fw-bold fs-6 px-4 py-2">Sign Up</button>
         </nav>
         <!-- hero section -->
         <section class="hero-section d-flex flex-column justify-content-center align-items-center">
             <h1 class="text-light">Taste Our Delicious</h1>
             <h1 class="text-light">Best Foods</h1>
-            <p class="text-light">There are many variations of passages of Lorem Ipsum available, but the majority have
+            <p class="text-light text-center">There are many variations of passages of Lorem Ipsum available, but the majority have
                 suffered alteration in some form, by injected humou.</p>
             <div>
-                <input id="search-field" type="text" placeholder="Search any food">
+                <input id="search-field" class="p-2 rounded" type="text" placeholder="&#x1F50E;&#xFE0E; Search any food">
                 <button id="btn-search" onclick="searchFunction()" type="button"
-                    class="btn btn-warning btn-lg fw-bold">Search</button>
+                    class="btn btn-warning btn-lg fw-bold fs-6 px-4 py-2">Search</button>
 
             </div>
         </section>
@@ -43,19 +51,19 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div id="displayFoodDetailsImage" class="modal-body">
-                            
+
                         </div>
                         <div id="displayFoodDetailsCategory" class="modal-body">
-                            
+
                         </div>
                         <div id="displayFoodDetailsArea" class="modal-body">
-                            
+
                         </div>
                         <div id="displayFoodDetailsInstructions" class="modal-body">
-                            
+
                         </div>
                         <div id="displayFoodDetailsYouTube" class="modal-body">
-                            
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -65,7 +73,7 @@
             </div>
 
 
-            <h2 class="text-center">Your Favorite Food</h2>
+            <h2 class="food-container-title">Your Favorite Food</h2>
             <!-- food cards -->
             <div id="food-container" class="d-flex flex-wrap">
                 <div class="card mb-3 mx-auto" style="max-width: 540px;">
@@ -78,9 +86,10 @@
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#displayFoodDetails">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#displayFoodDetails">
                                     View Details
-                                    </button>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -138,7 +147,7 @@
     </main>
     <footer>
         <section class="container p-4">
-            <div class="row p-4">
+            <div class="row p-4 footer-content">
                 <div class="col">
                     <h3>Section</h3>
                     <h5>Home</h5>
@@ -162,11 +171,11 @@
                     <h5>Terms of Service</h5>
                 </div>
                 <div class="col-5">
-                    <h3>Subscribe to our newsletter</h3>
-                    <p>There are many variations of passages of available, but the majority have suffered</p>
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p class="text-secondary">There are many variations of passages of available, but the majority have suffered</p>
                     <div>
-                        <input type="text" placeholder="Email Address">
-                        <button type="button" class="btn btn-warning btn-lg fw-bold">Subscribe</button>
+                        <input class="footer-input-field p-2 rounded" type="text" placeholder="Email Address">
+                        <button type="button" class="btn btn-warning btn-lg fw-bold fs-6 px-4 py-2">Subscribe</button>
                     </div>
                 </div>
             </div>
